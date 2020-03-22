@@ -20,7 +20,7 @@ const Pricetag = props => {
   const unitDetails = units.find(u => u.value === unit)
   const unitPrice = normalizePrice(price) / normalizePrice(packageValue) * unitDetails.multiplier
 
-  const prettyPrice = `${formatPrice(price)} €`
+  const prettyPrice = `${formatPrice(normalizePrice(price))} €`
   const prettyUnitPrice = `${formatPrice(unitPrice)} € / ${unitDetails.multiUnit}`
 
   return (
