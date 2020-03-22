@@ -1,0 +1,94 @@
+.cenovka {
+  $c: #{&};
+
+  display: block;
+  float: left;
+  border: 1pt dashed #666;
+  width: 6.4cm; height: 3.6cm;
+  position: relative;
+  font-weight: normal;
+  margin: 0 -1pt -1pt 0;
+
+  &--edit {
+    padding: 10px;
+
+    #{$c}__data {
+      display: flex;
+      align-items: center;
+
+      &__title {
+        flex: 0 0 6em;
+        padding: 2px 4px;
+        font-size: 12px;
+      }
+
+      &__value {
+        flex: 1 0 0;
+        padding: 2px 4px;
+
+        &--euro {
+          flex: 0 0 2em;
+        }
+
+        &--unit {
+          flex: 0 0 4em;
+        }
+      }
+
+      &__input {
+        min-width: 0;
+        width: 100%;
+
+        &--name {
+          text-transform: uppercase;
+        }
+      }
+
+      &--unitprice {
+        text-align: right;
+        font-size: 10px;
+      }
+    }
+  }
+
+  &--print {
+    #{$c}__name,
+    #{$c}__price,
+    #{$c}__plu,
+    #{$c}__unit-price {
+      position: absolute;
+      padding: 5pt;
+    }
+
+    #{$c}__name {
+      font-size: 9pt;
+      line-height: 1.2;
+      text-transform: uppercase;
+      top: 0; left: 0; right: 0;
+      height: 1.5cm;
+    }
+
+    #{$c}__price {
+      font-size: 28pt;
+      font-weight: bold;
+      top: 1.5cm; right: 0; left: 0;
+      height: 1.3cm;
+      text-align: right;
+    }
+
+    #{$c}__plu {
+      font-size: 8pt;
+      bottom: 0; left: 0;
+      width: 2.6cm; height: .8cm;
+      line-height: .45cm;
+    }
+
+    #{$c}__unit-price {
+      font-size: 8pt;
+      bottom: 0; right: 0;
+      width: 2.6cm; height: .8cm;
+      line-height: .45cm;
+      text-align: right;
+    }
+  }
+}
