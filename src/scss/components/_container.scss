@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  &--print {
+    width: 24cm;
+    transform: rotate(90deg) translateY(-100%) translateY(-.5cm);
+    transform-origin: left top;
+  }
+}

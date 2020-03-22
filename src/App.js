@@ -13,7 +13,7 @@ const App = () => {
         { isPrintView ? '✍️ Editácia cenoviek' : '🖨 Tlačový náhlad' }
       </button>
 
-      <div>
+      <div className={`container container--${ isPrintView ? 'print' : 'edit' }`}>
         { pricetagIds.map(id => ( <Pricetag key={ id } isPrintView={isPrintView} /> ))}
       </div>
 

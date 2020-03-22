@@ -29,7 +29,7 @@ const PricetagEdit = props => {
         </span>
       </label>
 
-      <label className="cenovka__data">
+      <div className="cenovka__data">
         <strong className="cenovka__data__title">Balenie:</strong>
         <span className="cenovka__data__value">
           <input
@@ -39,6 +39,8 @@ const PricetagEdit = props => {
             value={packageValue}
             onChange={e => setPackageValue(e.target.value)}
             autoComplete="off"
+            pattern="[0-9]*"
+            inputMode="numeric"
           />
         </span>
         <span className="cenovka__data__value cenovka__data__value--unit">
@@ -51,7 +53,7 @@ const PricetagEdit = props => {
             {units.map(({value, label}) => (<option value={value} key={value}>{label}</option>) )}
           </select>
         </span>
-      </label>
+      </div>
 
       <label className="cenovka__data">
         <strong className="cenovka__data__title">Cena:</strong>
@@ -63,6 +65,8 @@ const PricetagEdit = props => {
             value={price}
             onChange={e => setPrice(e.target.value)}
             autoComplete="off"
+            pattern="[0-9]*"
+            inputMode="numeric"
           />
         </span>
         <span className="cenovka__data__value cenovka__data__value--euro">
