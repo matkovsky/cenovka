@@ -1,4 +1,4 @@
-# Cenovka
+# 🏷 Cenovka
 
 This simple utility app is intended solely for my mother. 😆
 
