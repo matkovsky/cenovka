@@ -6,7 +6,7 @@ She's running a grocery store in Slovakia, and needs to print pricetags for the 
 
 ## Motivation and Technical Background
 
-As a harcore [https://vuejs.org](Vue.js) fan, I wanted to try out [https://reactjs.org](React) for a very simple app, so here it is, me dipping my toes into Lake React.
+As a harcore [Vue.js](https://vuejs.org) fan, I wanted to try out [React](https://reactjs.org) for a very simple app, so here it is, me dipping my toes into Lake React.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
