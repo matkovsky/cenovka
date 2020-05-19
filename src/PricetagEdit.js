@@ -65,8 +65,7 @@ const PricetagEdit = props => {
             value={price}
             onChange={e => setPrice(e.target.value)}
             autoComplete="off"
-            pattern="[0-9]*"
-            inputMode="numeric"
+            inputMode="decimal"
           />
         </span>
         <span className="cenovka__data__value cenovka__data__value--euro">
