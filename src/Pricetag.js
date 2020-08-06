@@ -33,6 +33,8 @@ const Pricetag = props => {
             prettyPrice={prettyPrice}
             plu={plu}
             prettyUnitPrice={prettyUnitPrice}
+            packageValue={packageValue}
+            unit={unit}
           />
         )
         : (
